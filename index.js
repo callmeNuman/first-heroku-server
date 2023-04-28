@@ -1,5 +1,4 @@
 const axios = require("axios");
-const { promises } = require("dns");
 const http = require("http");
 
 const server = http.createServer(async (req, res) => {
