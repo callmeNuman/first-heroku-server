@@ -9,6 +9,9 @@ const server = http.createServer(async (req, res) => {
     } else if (req.url === "/api") {
       res.write(JSON.stringify(userList));
       res.end();
+    } else if (req.url === "/about") {
+      res.write("<h1>About Page</h1>");
+      res.end();
     }
   }
 });
